@@ -25,6 +25,14 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
 /* Intro */
 
 .intro {
@@ -35,6 +43,17 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
+
+.intro_title {
+    font-size: 150px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+}
+
+
+
 /* Header */
 
 .header {
@@ -44,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     left: 0;
     z-index: 1000;
+    padding-top: 30px;
 }
 
 .header_logo {
@@ -55,24 +75,41 @@ h1, h2, h3, h4, h5, h6 {
 /* Nav */
 
 .nav_link {
+    display: inline-block;
     font-size: 14px;
     text-transform: uppercase;
-
-    transition: color .2s linear;
-
-}
-
-.nav_link {
     color: #fff;
     text-decoration: none;
+    position: relative;
+
+    transition: color .2s linear;
+    margin: 0 10px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
 }
+
+.nav_link::after {
+    content: "";
+    display: none;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+
+    position: absolute;
+
+
+}
+
 
 .nav_link:hover {
     color: rgb(248, 238, 96);
 }
 
 
-
+.nav_link:hover::after {
+    display: block;
+}
 
 
 
