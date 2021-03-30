@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .intro_suptitle {
@@ -73,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 60px;
     height: 3px;
-    margin: 60px auto 0;
+    margin: 60px auto 30px;
 
     background-color: #fff;
 
@@ -137,6 +138,63 @@ h1, h2, h3, h4, h5, h6 {
 .nav_link:hover::after {
     display: block;
 }
+
+/* Button */
+
+.btn {
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border: 2px #fff solid;
+    transition: background .1s linear, color .1s linear;
+
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Slider*/
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider_item {
+    width: 24%;
+    font-size: 18px;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.slider_num {
+
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
