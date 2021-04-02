@@ -166,26 +166,56 @@ h1, h2, h3, h4, h5, h6 {
 /* Slider*/
 
 .slider {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+
 }
 
 .slider_item {
     width: 24%;
 
     padding: 30px 0;
-    border-top: 2px solid #fff;
+    border-top: 3px solid #fff;
     font-size: 18px;
     color:#fff;
     text-transform: uppercase;
+    opacity: .7;
+    position: relative;
 }
+
+.slider_inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
 
 .slider_num {
 
     font-size: 24px;
     font-weight: 700;
 
+}
+
+.slider_item.active {
+    opacity: 1;
+
+}
+.slider_item.active:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(211, 42, 42);
+    top: -3px;
+    left: 0;
+    z-index: 1;
 }
 
 
